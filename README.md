@@ -40,6 +40,13 @@ npm install
 
 # run the app:
 DEBUG=mean-wifinder:* npm start
+
+# use nodemon to enable app server restart on code changes
+# - install nodemon
+npm install -g nodemon # install globally
+# - use nodemon
+cd mean-wifinder # cd to the project directory
+nodemon
 ```
 
 ## Reference
