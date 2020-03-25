@@ -51,7 +51,10 @@ nodemon
 
 ## Reference
 
-- [node.js](https://nodejs.org/en/about/)
-- npm
-- [express.js](http://expressjs.com/)
-- [mongoDB](https://www.mongodb.com/)
+- [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](http://expressjs.com/)
+- [Angular](https://angular.io/)
+- [Node.js](https://nodejs.org/en/about/)
+- [Twitter Bootstrap4](https://getbootstrap.com)
+- [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
