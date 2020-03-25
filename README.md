@@ -90,4 +90,5 @@ heroku open # to open the link in the browser
 - [Node.js](https://nodejs.org/en/about/)
 - [Twitter Bootstrap4](https://getbootstrap.com)
 - [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
+- [Pug.js Template Engine](https://pugjs.org)
 - [Heroku](https://www.heroku.com/)
