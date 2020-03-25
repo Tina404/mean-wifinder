@@ -55,7 +55,31 @@ nodemon
 # test it locally with heroku local
 heroku local
 # - then you can try to open it at http://localhost:5000/ to check if everything is good
+
+# then you can log into heroku, create a heroku app to push your code up for deployment
+heroku login -i
+heroku create tinas-mean-wifinder
+# Creating ⬢ tinas-mean-wifinder... done
+# https://tinas-mean-wifinder.herokuapp.com/ | https://git.heroku.com/tinas-mean-wifinder.git
+
+# to push your code (changes) up for deployment
+# - first you need to git commit your changes
+# - then you can push the changes to heroku and deploy
+git push heroku master
+# - click on the link above to check or run
+heroku open # to open the link in the browser
 ```
+
+## Summary
+
+1. Setup and deploy a MEAN web app
+
+- create a new Express application
+- manage application dependencies with npm and the package.json file
+- refractor a standard Express project to the MVC architecture
+- MVC: routes > Controllers > View (& Model)
+- use Bootstrap4 and Font Awesome
+- publish the Express application live to Heroku using Git
 
 ## Reference
 
@@ -66,3 +90,4 @@ heroku local
 - [Node.js](https://nodejs.org/en/about/)
 - [Twitter Bootstrap4](https://getbootstrap.com)
 - [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
+- [Heroku](https://www.heroku.com/)
