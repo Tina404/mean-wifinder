@@ -49,6 +49,14 @@ cd mean-wifinder # cd to the project directory
 nodemon
 ```
 
+### Deploy to Heroku
+
+```bash
+# test it locally with heroku local
+heroku local
+# - then you can try to open it at http://localhost:5000/ to check if everything is good
+```
+
 ## Reference
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
