@@ -92,3 +92,4 @@ heroku open # to open the link in the browser
 - [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
 - [Pug.js Template Engine](https://pugjs.org)
 - [Heroku](https://www.heroku.com/)
+- [Lorem Ipsum - Random Text Generator](https://loremipsum.io/)

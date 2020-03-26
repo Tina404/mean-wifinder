@@ -1,16 +1,16 @@
 /* Home page */
 const homelist = (req, res) => {
-    res.render('index', { title: 'Home'});
+    res.render('location-list', { title: 'Home'});
 }
 
 /* Location info Page */
 const locationInfo = (req, res) => {
-    res.render('index', { title: 'Location Info'});
+    res.render('location-info', { title: 'Location Info'});
 }
 
 /* Add Review Page */
 const addReview = (req, res) => {
-    res.render('index', { title: 'Add Review'});
+    res.render('location-review-form', { title: 'Add Review'});
 }
 
 module.exports = {
