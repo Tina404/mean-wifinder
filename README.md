@@ -74,12 +74,22 @@ heroku open # to open the link in the browser
 
 1. Setup and deploy a MEAN web app
 
-- create a new Express application
-- manage application dependencies with npm and the package.json file
-- refractor a standard Express project to the MVC architecture
-- MVC: routes > Controllers > View (& Model)
-- use Bootstrap4 and Font Awesome
-- publish the Express application live to Heroku using Git
+    - create a new Express application
+    - manage application dependencies with npm and the package.json file
+    - refractor a standard Express project to the MVC architecture
+    - MVC: routes > Controllers > View (& Model)
+    - use Bootstrap4 and Font Awesome
+    - publish the Express application live to Heroku using Git
+
+2. Move data out of Views and into Controllers
+
+    - define and organize routes in Express
+    - use Node modules to hold the controllers
+    - set up multiple sets of controllers by proper definition of the routes
+    - Prototyping views with Pug and Bootstrap
+    - Making reusable Pug components and mixins
+    - Displaying dynamic data in Pug templates
+    - Passing data from controllers to views
 
 ## Reference
 
@@ -91,5 +101,12 @@ heroku open # to open the link in the browser
 - [Twitter Bootstrap4](https://getbootstrap.com)
 - [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
 - [Pug.js Template Engine](https://pugjs.org)
+  - [inheritance](https://pugjs.org/language/inheritance.html)
+  - [include](https://pugjs.org/language/includes.html)
+  - [mixins - functions](https://pugjs.org/language/mixins.html)
+  - [conditionals - if-else](https://pugjs.org/language/conditionals.html)
+  - [iteration - loop](https://pugjs.org/language/iteration.html)
+  - [code](https://pugjs.org/language/code.html)
+  - [interpolation](https://pugjs.org/language/interpolation.html)
 - [Heroku](https://www.heroku.com/)
 - [Lorem Ipsum - Random Text Generator](https://loremipsum.io/)
