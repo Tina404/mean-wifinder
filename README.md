@@ -114,6 +114,24 @@ heroku config:get NODE_ENV # getter
 NODE_ENV=production nodemon
 ```
 
+### REST API
+
+- REST: REpresentational State Transfer. REST is an architectural style rather than a strict protocol. It is stateless, having no idea of any current user state or history.
+- API: Application Program Interface. API enables applications to talk to one another.
+- REST API: It is a stateless interface to your application. In the case of the MEAN stack, the REST API is used to create a stateless interface to your database, enabling a way for other applications to work with the data.
+- Client > HTTP request > REST API > process and/or talk to database > HTTP response > Client
+- CRUD (Create, Read, Update, Delete)
+  - Create a new item, e.g.
+    - [POST] /locations, <https://tinas-mean-wifinder.herokuapp.com/locations>
+  - Read a list of several items, e.g.
+    - [GET] /locations, <https://tinas-mean-wifinder.herokuapp.com/locations>
+  - Read a specific item, e.g.
+    - [GET] /locations/:locationid, <https://tinas-mean-wifinder.herokuapp.com/locations/123>
+  - Update a specific item, e.g.
+    - [PUT] /locations/:locationid, <https://tinas-mean-wifinder.herokuapp.com/locations/123>
+  - Delete a specific item, e.g.
+    - [DELETE] /locations/:locationid, <https://tinas-mean-wifinder.herokuapp.com/locations/123>
+
 ## Summary
 
 1. Setup and deploy a MEAN web app
@@ -148,7 +166,7 @@ NODE_ENV=production nodemon
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
 - [MongoDB](https://www.mongodb.com/)
-  - Mongoose
+  - [Mongoose](https://mongoosejs.com/)
   - Collection, Document, Schema, Path
   - [Heroku mLab doc](https://devcenter.heroku.com/articles/mongolab)
 - [Express.js](http://expressjs.com/)
