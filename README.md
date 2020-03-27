@@ -50,6 +50,9 @@ show dbs # show databases
 use local # use a specific database
 show collections # list all collections in this database
 db.startup_log.find() # show all documents in collection named `startup_log`
+
+
+# populate database with some test data, [example](./note/db.sh)
 ```
 
 ## Steps
@@ -162,6 +165,16 @@ NODE_ENV=production nodemon
     - Pushing your database to a live URI
     - Connecting to different databases from different environments
 
+4. Create REST API for the application
+
+    - The best practices on creating a REST API, including URLs, request methods, and response codes
+    - How the POST, GET, PUT, and DELETE HTTP request methods map to common CRUD operations
+    - Mongoose helper methods for creating the helper methods
+    - Ways to interact with the data through Mongoose models and how one instance of the model maps directly to one document in the database
+    - How to manage subdocuments through their parent document
+    - Some ways of making the API robust by checking for any possible errors you can think of so that a request is never left unanswered
+    - Tested the REST APIs using Postman
+
 ## Reference
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
@@ -184,3 +197,4 @@ NODE_ENV=production nodemon
   - [interpolation](https://pugjs.org/language/interpolation.html)
 - [Heroku](https://www.heroku.com/)
 - [Lorem Ipsum - Random Text Generator](https://loremipsum.io/)
+- [Postman](https://www.postman.com/)

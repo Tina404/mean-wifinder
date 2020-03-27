@@ -62,3 +62,9 @@ typings/
 
 # MAC OS meta file
 .DS_Store
+
+# database dump
+dump/
+
+# dev mimi file
+.mimi
