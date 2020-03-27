@@ -5,28 +5,51 @@ A fullstack web app created using the MEAN (MongoDB, Express.js, Angular, Node.j
 ## Prerequisites
 
 ```bash
-# 1. install node (npm is installed alongside node)
+# - install node (npm is installed alongside node)
 https://nodejs.org/en/
 
-# 2. check node & npm version
+# - check node & npm version
 node --version
 npm --version
 
-# 3. install express-generator
+# - install express-generator
 npm install -g express-generator
-# 4. check express version
+# - check express version
 express --version
 
-# 5. install Angular
+# - install Angular
 npm install -g @angular/cli
-# 6. check angular version
+# - check angular version
 ng v
 
-# 7. install MongoDB
-
-# 8. check MongoDB version
+# - install MongoDB globally
+# - check MongoDB version
 mongo --version # Mongo shell version
 mongod --version # MongoDB version
+
+# - install mongoose
+npm i mongoose
+```
+
+### MongoDB
+
+```bash
+# - set up for MongoDB
+# -- create the folder "/data/db/" & change the folder owner to current user, then run mongodb
+sudo mkdir -p /data/db/; sudo chown -R $USER /data/db; mongod
+# -- or run mongoDB with specified folder
+mkdir -p ~/mongoDB/data/db; mongod --dbpath '~/mongoDB/data/db'
+
+# -- maybe also this temp folder
+# sudo chown -R $USER /tmp/
+
+# NOTE: running MongoDB as a service (so it automatically restarts when reboot)
+
+mongo # to start the MongoDB shell
+show dbs # show databases
+use local # use a specific database
+show collections # list all collections in this database
+db.startup_log.find() # show all documents in collection named `startup_log`
 ```
 
 ## Steps
@@ -68,6 +91,27 @@ heroku create tinas-mean-wifinder
 git push heroku master
 # - click on the link above to check or run
 heroku open # to open the link in the browser
+
+
+# use mlab via heroku addon
+heroku addons:create mongolab # Create mongolab on ⬢ tinas-mean-wifinder.
+# consult the mLab Add-on Admin UI to check on its progress.
+# Created mongolab-transparent-93198 as MONGODB_URI
+
+heroku addons:docs mongolab # to view documentation
+heroku addons:open mongolab
+heroku config:get MONGODB_URI # get the database URI
+# mongodb://heroku_23xdfjkj:k23jd0sidfwenk2385nskjh22345dsf@ds289401.mlab.com:25073/heroku_23ksk23sdi8
+# ^format: db-protocal://username:password@db.server.address:port/db-name
+
+
+# note: examples on heroku get/set environment variables
+heroku config:set NODE_ENV=production # setter
+heroku config:get NODE_ENV # getter
+# process.env.NODE_ENV # use this to get the env var value in the app
+
+# to run the nodemon with environment variables, example:
+NODE_ENV=production nodemon
 ```
 
 ## Summary
@@ -91,10 +135,22 @@ heroku open # to open the link in the browser
     - Displaying dynamic data in Pug templates
     - Passing data from controllers to views
 
+3. Use MongoDB and data model
+    - connect a MongoDB database to an Express application using Mongoose
+    - Best practices for managing Mongoose connections
+    - model data using Mongoose schemas
+    - How schemas compile into models
+    - Using the MongoDB shell to work directly with the database
+    - Pushing your database to a live URI
+    - Connecting to different databases from different environments
+
 ## Reference
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
 - [MongoDB](https://www.mongodb.com/)
+  - Mongoose
+  - Collection, Document, Schema, Path
+  - [Heroku mLab doc](https://devcenter.heroku.com/articles/mongolab)
 - [Express.js](http://expressjs.com/)
 - [Angular](https://angular.io/)
 - [Node.js](https://nodejs.org/en/about/)
