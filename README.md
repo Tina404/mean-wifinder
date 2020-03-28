@@ -175,6 +175,14 @@ NODE_ENV=production nodemon
     - Some ways of making the API robust by checking for any possible errors you can think of so that a request is never left unanswered
     - Tested the REST APIs using Postman
 
+5. Use REST APIs in Express Frontend
+
+    - use the request module to make API calls from Express
+    - make POST and GET requests to API endpoints
+    - decoupling - keep rendering functions away from the API request logic
+    - apply a simple pattern to the API logic in each controller
+    - use data validation in three places in the architecture and when and why to use each
+
 ## Reference
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
