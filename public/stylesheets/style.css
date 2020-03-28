@@ -44,6 +44,11 @@ legend {
   padding-bottom: 0.5em;
 }
 
+.reviewAuthor {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 .review-header {
   background-color: #31727a;
   padding-top: 0.5em;
