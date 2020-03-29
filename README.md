@@ -135,6 +135,19 @@ NODE_ENV=production nodemon
   - Delete a specific item, e.g.
     - [DELETE] /locations/:locationid, <https://tinas-mean-wifinder.herokuapp.com/locations/123>
 
+### Angular
+
+```bash
+ng new wifinder-public --skipGit=true --skipTests=true --defaults=true --directory app_public
+
+cd app_public/
+ng serve
+# check it out at http://localhost:4200/
+# ng serve is perfect for dev env. It restart automatically when you make code changes.
+# when it comes to building the final version, you use:
+ng build
+```
+
 ## Summary
 
 1. Setup and deploy a MEAN web app
