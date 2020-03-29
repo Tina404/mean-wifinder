@@ -146,6 +146,9 @@ ng serve
 # ng serve is perfect for dev env. It restart automatically when you make code changes.
 # when it comes to building the final version, you use:
 ng build
+
+ng g c home-list # angular generate component
+
 ```
 
 ## Summary
