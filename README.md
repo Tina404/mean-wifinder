@@ -155,6 +155,7 @@ ng g s wifinder-data # use angular cli to create a service (e.g. to fetch data v
 ng g c framework # generate a component for angular home page navigation
 ng g c about # about page
 ng g c homepage # homepage link
+ng g c page-header # page header component
 
 ```
 

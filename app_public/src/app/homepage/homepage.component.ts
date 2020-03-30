@@ -12,4 +12,11 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
   }
 
+  public pageContent = {
+    header: {
+      title: 'Wifinder',
+      strapline: 'Find places to work with wifi near you!'
+    }
+  };
+
 }

@@ -12,4 +12,9 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  public pageContent = {
+    header: {
+      title: 'About Wifinder',
+    }
+  };
 }
