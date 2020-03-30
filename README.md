@@ -208,6 +208,7 @@ ng g c home-list # angular generate component
   - [Heroku mLab doc](https://devcenter.heroku.com/articles/mongolab)
 - [Express.js](http://expressjs.com/)
 - [Angular](https://angular.io/)
+  - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en/about/)
 - [Twitter Bootstrap4](https://getbootstrap.com)
 - [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
