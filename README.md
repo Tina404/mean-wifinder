@@ -148,6 +148,7 @@ ng serve
 ng build
 
 ng g c home-list # angular generate component
+ng generate pipe distance # angular generate a custom pipe named distance
 
 ```
 
