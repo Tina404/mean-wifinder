@@ -157,6 +157,7 @@ ng g c about # about page
 ng g c homepage # homepage link
 ng g c page-header # page header component
 ng g c sidebar # sidebar
+ng g s geolocation # create a service for geolocation
 ```
 
 ## Summary
