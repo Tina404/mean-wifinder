@@ -153,6 +153,7 @@ ng generate pipe distance # angular generate a custom pipe named distance
 ng g s wifinder-data # use angular cli to create a service (e.g. to fetch data via api calls)
 
 ng g c framework # generate a component for angular home page navigation
+ng g c about # about page
 ```
 
 ## Summary
