@@ -156,7 +156,7 @@ ng g c framework # generate a component for angular home page navigation
 ng g c about # about page
 ng g c homepage # homepage link
 ng g c page-header # page header component
-
+ng g c sidebar # sidebar
 ```
 
 ## Summary
