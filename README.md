@@ -143,9 +143,10 @@ ng new wifinder-public --skipGit=true --skipTests=true --defaults=true --directo
 cd app_public/
 ng serve
 # check it out at http://localhost:4200/
-# ng serve is perfect for dev env. It restart automatically when you make code changes.
+# ng serve is perfect for dev env. It will rebuild your app automatically when you make code changes.
 # when it comes to building the final version, you use:
-ng build
+ng build # this will output the built files in dist/ folder, which will be whipped out when ng serve rebuild as you make code changes.
+ng build --prod --output-path build  # use this to change the ouput path to build/ folder to avoid ng serve deleting the built files.
 
 ng g c home-list # angular generate component
 ng generate pipe distance # angular generate a custom pipe named distance
@@ -202,7 +203,11 @@ ng g s wifinder-data # use angular cli to create a service (e.g. to fetch data v
     - use data validation in three places in the architecture and when and why to use each
 
 6. Create an Angular App with TypeScript
-
+    - use Angular CLI to generate application boilerplate, components,and more
+    - work with TypeScript classes, importing and exporting, and using them to define types for variables
+    - control the code execution flow using Angular lifecycle hooks
+    - create and use some of the Angular building blocks to put an application together, covering modules, components, pipes, and services
+    - use the Angular CLI to build the app to be used for production
     - Observables and Promises are great ways of handling asynchronous requests. Observables return chunks of data in a stream, whereas Promises return complete sets of data. Angular includes the RxJS library for working with observables, including converting them into Promises.
 
 ## Reference

@@ -32,3 +32,13 @@ html
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
     script(src='/javascripts/bootstrap.min.js')
     script(src='/javascripts/validation.js')
+    block scripts
+      
+      script(src='build/runtime-es2015.c5fa8325f89fc516600b.js', type='module')
+      script(src='build/runtime-es5.c5fa8325f89fc516600b.js', nomodule)
+      script(src='build/polyfills-es2015.5b10b8fd823b6392f1fd.js', type='module')
+      script(src='build/polyfills-es5.3e8196928d184a6e5319.js', nomodule)
+      script(src='build/main-es2015.fa339a48e8e58111b6a5.js', type='module')
+      script(src='build/main-es5.fa339a48e8e58111b6a5.js', nomodule)
+
+      script(src='build/styles.3ff695c00d717f2d2a11.css')
