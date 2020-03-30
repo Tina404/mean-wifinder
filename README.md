@@ -149,6 +149,7 @@ ng build
 
 ng g c home-list # angular generate component
 ng generate pipe distance # angular generate a custom pipe named distance
+ng g s wifinder-data # use angular cli to create a service (e.g. to fetch data via api calls)
 
 ```
 
@@ -199,6 +200,10 @@ ng generate pipe distance # angular generate a custom pipe named distance
     - decoupling - keep rendering functions away from the API request logic
     - apply a simple pattern to the API logic in each controller
     - use data validation in three places in the architecture and when and why to use each
+
+6. Create an Angular App with TypeScript
+
+    - Observables and Promises are great ways of handling asynchronous requests. Observables return chunks of data in a stream, whereas Promises return complete sets of data. Angular includes the RxJS library for working with observables, including converting them into Promises.
 
 ## Reference
 
