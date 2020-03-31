@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HomeListComponent } from './home-list/home-list.component';
@@ -16,6 +15,7 @@ import { RatingStarsComponent } from './rating-stars/rating-stars.component';
 import { LocationDetailsComponent } from './location-details/location-details.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { MostRecentFirstPipe } from './most-recent-first.pipe';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -37,20 +37,7 @@ import { MostRecentFirstPipe } from './most-recent-first.pipe';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: HomepageComponent
-      }, 
-      {
-        path: 'about',
-        component: AboutComponent
-      },
-      {
-        path: 'location/:locationId',
-        component: DetailsPageComponent
-      }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [FrameworkComponent]

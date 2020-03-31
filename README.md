@@ -163,6 +163,7 @@ ng g c rating-stars
 ng g c location-details
 ng g c details-page
 ng g p most-recent-first # create a pipe for ordering reviews
+ng g m app-routing # generate an angular module for routing
 ```
 
 ## Summary
