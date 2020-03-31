@@ -160,6 +160,8 @@ ng g c sidebar # sidebar
 ng g s geolocation # create a service for geolocation
 ng g p html-line-breaks # create a pipe to parse html link-break tags in content passed into the template file from the ts file
 ng g c rating-stars
+ng g c location-details
+ng g c details-page
 ```
 
 ## Summary
