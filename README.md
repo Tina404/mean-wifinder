@@ -164,6 +164,7 @@ ng g c location-details
 ng g c details-page
 ng g p most-recent-first # create a pipe for ordering reviews
 ng g m app-routing # generate an angular module for routing
+ng g class location # create a new class for location model
 ```
 
 ## Summary

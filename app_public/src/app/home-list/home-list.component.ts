@@ -1,16 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { WifinderDataService } from '../wifinder-data.service';
 import { GeolocationService } from '../geolocation.service';
-
-export class Location {
-  _id: string;
-  name: string;
-  distance: number;
-  address: string;
-  rating: number;
-  facilities: string[];
-  reviews: any[];
-}
+import { Location } from '../location';
 
 @Component({
   selector: 'app-home-list',

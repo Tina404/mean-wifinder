@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
-import { Location } from '../home-list/home-list.component';
+import { Location } from '../location';
 
 import { WifinderDataService } from '../wifinder-data.service';
 
