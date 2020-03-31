@@ -13,6 +13,8 @@ export class LocationDetailsComponent implements OnInit {
   public formVisible: boolean = false;
   public formError: string;
 
+  public googleAPIKey: string = 'paste use your Google Maps API Key here'; // TODO
+
   @Input() location: Location;
   
   constructor(private wifinderDataService: WifinderDataService) { }
