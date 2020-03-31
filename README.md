@@ -162,6 +162,7 @@ ng g p html-line-breaks # create a pipe to parse html link-break tags in content
 ng g c rating-stars
 ng g c location-details
 ng g c details-page
+ng g p most-recent-first # create a pipe for ordering reviews
 ```
 
 ## Summary
