@@ -218,6 +218,13 @@ ng g c rating-stars
     - use the Angular CLI to build the app to be used for production
     - Observables and Promises are great ways of handling asynchronous requests. Observables return chunks of data in a stream, whereas Promises return complete sets of data. Angular includes the RxJS library for working with observables, including converting them into Promises.
 
+7. Build Single-Page Application using Angular
+
+    - use Angular Router for routing
+    - build a functional website and use site navigation
+    - use nested components to create a modular and scalable application
+    - work with external interfaces like the browser’s geolocation capabilities
+
 ## Reference
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
