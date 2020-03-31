@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Location } from '../location';
+import { Location, Review } from '../location';
 import { WifinderDataService } from '../wifinder-data.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class LocationDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
-  public newReview = {
+  public newReview: Review = {
     author: '',
     rating: 5,
     reviewText: ''
@@ -32,7 +32,7 @@ export class LocationDetailsComponent implements OnInit {
       console.log(this.newReview);
       this.wifinderDataService
         .addReviewByLocationId(this.location._id, this.newReview)
-        .then(review => {
+        .then((review: Review) => {
           console.log('Review saved', review);
           
           let reviews = this.location.reviews.slice(0);

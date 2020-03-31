@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { Review } from './location';
 
 @Pipe({
   name: 'mostRecentFirst'
@@ -11,7 +12,7 @@ export class MostRecentFirstPipe implements PipeTransform {
     }
     return comparison;
   }
-  transform(reviews: any[]): any[] {
+  transform(reviews: Review[]): Review[] {
     if (reviews && reviews.length > 0) {
       return reviews.sort(this.compare);
     }

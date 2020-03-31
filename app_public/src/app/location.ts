@@ -5,6 +5,12 @@ class OpeningTimes {
   closed: boolean;
 }
 
+export class Review {
+  author: string;
+  rating: number;
+  reviewText: string;
+}
+
 export class Location {
   _id: string;
   name: string;
@@ -12,7 +18,7 @@ export class Location {
   address: string;
   rating: number;
   facilities: string[];
-  reviews: any[];
+  reviews: Review[];
   
   coords: number[];
   openingTimes: OpeningTimes[];

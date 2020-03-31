@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Location } from './location';
+import { Location, Review } from './location';
 
 @Injectable({
   providedIn: 'root'
@@ -30,12 +30,12 @@ export class WifinderDataService {
       .catch(this.handleError);
   }
 
-  public addReviewByLocationId(locationId: string, formData: any): Promise<any> {
+  public addReviewByLocationId(locationId: string, formData: Review): Promise<Review> {
     const url: string = `${this.apiBaseUrl}/locations/${locationId}/reviews`;
     return this.http
       .post(url, formData)
       .toPromise()
-      .then(response => response as any)
+      .then(response => response as Review)
       .catch(this.handleError);
   }
 
