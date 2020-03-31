@@ -9,11 +9,19 @@ import { Location } from '../home-list/home-list.component';
 })
 export class LocationDetailsComponent implements OnInit {
 
+  public formVisible: boolean = false;
+  
   @Input() location: Location;
   
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public newReview = {
+    author: '',
+    rating: 5,
+    reviewText: ''
   }
 
 }
