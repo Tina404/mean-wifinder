@@ -230,6 +230,14 @@ ng g class location # create a new class for location model
     - use nested components to create a modular and scalable application
     - work with external interfaces like the browser’s geolocation capabilities
 
+    - pass data via URL parameters from routes to components and services
+    - use services to query the API
+    - use Angular templates to display logic in the form of *ngIf and ngSwitch
+    - create custom pipes and use them
+    - best practice - place routing configuration in a separate file to improve the architecture
+    - best practice - create standalone class definitions, including nested classes, and for improving the use of custom type definitions through the application
+    - get Express to deliver an Angular application instead of server-side routes for certain URL requests
+
 ## Reference
 
 - [Getting MEAN with MongoDB, Express, Angular and Node, 2nd Edition](https://github.com/cliveharber/gettingMean-2)
