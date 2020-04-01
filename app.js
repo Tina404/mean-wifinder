@@ -32,6 +32,12 @@ app.use('/api', (req, res, next) => { // avoid CORS error when call the REST API
 // app.use('/', indexRouter);
 app.use('/api', apiRouter);
 
+// app.get('*', function(req, res, next) {
+app.get(/(\/about)|(\/location\/[a-z0-9]{24})/, function(req, res) {
+  res.sendFile(path.join(__dirname, 'app_public', 'build', 'index.html'));
+});
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
