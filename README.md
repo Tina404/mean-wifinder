@@ -165,6 +165,14 @@ ng g c details-page
 ng g p most-recent-first # create a pipe for ordering reviews
 ng g m app-routing # generate an angular module for routing
 ng g class location # create a new class for location model
+
+# JWT secret
+# 1. create a .env file in project root directory
+# 2. save your JWT_SECRET key-value pair in the .env file for your local dev environment, e.g: JWT_SECRET=my-JWT-SECRET-for-Dev
+# 3. set the JWT_SECRET environment variable for your production environment as well, e.g.
+heroku config:set JWT_SECRET=my-JWT-SECRET-for-Production
+# note: one way to generate a good enough secret key is via python:
+python -c "import uuid; print(uuid.uuid4().hex)"
 ```
 
 ## Summary

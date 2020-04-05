@@ -58,4 +58,6 @@ process.on('SIGTERM', () => { // when heroku app terminate
 
 connect();
 
+// bring in database schemas and models
 require('./locations');
+require('./users');

@@ -1,9 +1,13 @@
+require('dotenv').config();
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const passport = require('passport');
 require('./app_api/models/db');
+require('./app_api/config/passport');
+
 
 // const indexRouter = require('./app_server/routes/index');
 const apiRouter = require('./app_api/routes/index');
@@ -20,11 +24,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'app_public', 'build')));
+app.use(passport.initialize());
 
 app.use('/api', (req, res, next) => { // avoid CORS error when call the REST API endpoints from the angular side
   if (req.headers.origin == 'http://localhost:4200' || req.headers.origin == 'http://localhost:3000') {
     res.header('Access-Control-Allow-Origin', req.headers.origin);
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');  
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');  
   }
   next();
 });
